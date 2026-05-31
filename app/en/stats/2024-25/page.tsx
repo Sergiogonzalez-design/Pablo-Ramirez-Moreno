@@ -32,8 +32,6 @@ const matches = [
   { date: "15 Sep", home: "ARA", away: "LEG", score: "1–0", min: 90 },
   { date: "08 Sep", home: "LEG", away: "ALC", score: "4–0", min: 90 },
   { date: "28 Aug", home: "LEG", away: "CDT", score: "0–1", min: 90 },
-  { date: "10 Aug", home: "LEG", away: "GUA", score: "0–0", min: 46 },
-  { date: "07 Aug", home: "MAJ", away: "LEG", score: "0–0", min: 46 },
 ];
 
 export default function RamiEnStats2425Page() {

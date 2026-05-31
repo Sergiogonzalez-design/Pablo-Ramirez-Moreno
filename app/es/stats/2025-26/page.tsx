@@ -34,7 +34,6 @@ const matches = [
   { date: "05 Oct", home: "LPA", away: "FUE", score: "1–2", min: 15 },
   { date: "07 Sep", home: "ORI", away: "FUE", score: "2–0", min: 90 },
   { date: "31 Ago", home: "ADA", away: "FUE", score: "0–1", min: 33 },
-  { date: "15 Ago", home: "FUE", away: "AVI", score: "0–0", min: 90 },
 ];
 
 export default function RamiEsStats2526Page() {
