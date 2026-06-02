@@ -11,10 +11,18 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { label: "Birth Date", value: "18/03/2003" },
-  { label: "Height / Weight", value: "186 cm / 78 kg" },
-  { label: "Career Minutes", value: "11,764" },
+  { label: "Games", value: "139" },
+  { label: "Starts", value: "116" },
+  { label: "Position", value: "Center Back" },
   { label: "Current League", value: "2ª Fed." },
+];
+
+const details = [
+  { label: "Birth Date", value: "18/03/2003" },
+  { label: "Height", value: "186 cm" },
+  { label: "Weight", value: "78 kg" },
+  { label: "Strong Foot", value: "Right" },
+  { label: "Hometown", value: "Madrid, Spain" },
 ];
 
 const seasons = [
@@ -52,6 +60,7 @@ export default function EnPage() {
             />
             <li><a href="#seasons" className="transition-colors hover:text-primary">Seasons</a></li>
             <li><a href="#highlights" className="transition-colors hover:text-primary">Highlights</a></li>
+            <li><a href="#report" className="transition-colors hover:text-primary">Report</a></li>
             <li><a href="#career" className="transition-colors hover:text-primary">Career</a></li>
             <li><a href="#contact" className="transition-colors hover:text-primary">Contact</a></li>
           </ul>
@@ -84,6 +93,17 @@ export default function EnPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/10 bg-black/40 py-8">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-6 px-4 sm:grid-cols-3 sm:px-6 lg:grid-cols-5 lg:px-8">
+          {details.map((d) => (
+            <div key={d.label}>
+              <p className="font-body text-xs uppercase tracking-widest text-primary">{d.label}</p>
+              <p className="mt-2 font-heading text-base font-semibold text-foreground">{d.value}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -132,6 +152,19 @@ export default function EnPage() {
                 Your browser does not support the video tag.
               </video>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="report" className="scroll-mt-24 border-t border-white/10 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">Performance Report</h2>
+          <p className="font-body mt-2 max-w-2xl text-secondary-foreground">
+            Full report with profile, season metrics, and career path — ready for coaches and recruiters.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="/pablo-ramirez-report.pdf" target="_blank" rel="noopener noreferrer" className="font-body inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90">View Report</a>
+            <a href="/pablo-ramirez-report.pdf" download className="font-body inline-flex items-center rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-foreground/10">Download PDF</a>
           </div>
         </div>
       </section>

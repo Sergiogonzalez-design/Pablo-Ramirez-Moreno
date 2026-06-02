@@ -20,7 +20,7 @@ export default function CompanyLogo({
   return (
     <Link href="/" className={`inline-flex items-center ${className}`}>
       <Image
-        src="/Onix media logo.jpeg"
+        src="/Onix media new color logo.png"
         alt="Onix Media"
         width={480}
         height={480}
