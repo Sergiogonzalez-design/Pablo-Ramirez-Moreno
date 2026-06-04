@@ -15,7 +15,7 @@ export default function CompanyLogo({
   const sizeClass =
     variant === "footer"
       ? "h-32 w-auto sm:h-40 md:h-48"
-      : "h-24 w-auto sm:h-28 md:h-32";
+      : "h-10 w-auto sm:h-11";
 
   return (
     <Link href="/" className={`inline-flex items-center ${className}`}>

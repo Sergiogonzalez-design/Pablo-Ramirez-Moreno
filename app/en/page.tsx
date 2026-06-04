@@ -44,8 +44,8 @@ export default function EnPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/85 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex min-w-0 items-center gap-4">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 sm:px-6 sm:py-2.5 lg:px-8">
+          <div className="flex min-w-0 items-center gap-2 sm:gap-3">
             <Link href="/" className="shrink-0 font-body text-sm text-secondary-foreground transition-colors hover:text-primary" aria-label="Back to language selector">←</Link>
             <CompanyLogo priority />
             <span className="font-body text-sm font-semibold text-secondary-foreground">PR15</span>
@@ -67,7 +67,7 @@ export default function EnPage() {
         </nav>
       </header>
 
-      <section className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
+      <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
         <div className="absolute inset-0 bg-cover" style={{ backgroundImage: "url('/Rami jugando.jpg')", backgroundPosition: "center 20%" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
