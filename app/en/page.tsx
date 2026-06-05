@@ -146,11 +146,15 @@ export default function EnPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">Highlights</h2>
           <div className="mt-10">
-            <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-              <video className="w-full" controls preload="metadata" poster="/Rami jugando.jpg">
-                <source src="/rami-highlights.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="aspect-video overflow-hidden rounded-xl border border-white/10 bg-black/25 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/2fs-Gborb0o"
+                title="Pablo Ramirez — Highlights"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
