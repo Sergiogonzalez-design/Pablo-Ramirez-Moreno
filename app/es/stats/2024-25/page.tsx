@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import CompanyLogo from "@/components/CompanyLogo";
 import RamiFooter from "@/components/RamiFooter";
-import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Pablo Ramirez — Estadísticas 2024/25",
@@ -46,20 +45,16 @@ export default function RamiEsStats2425Page() {
         backgroundAttachment: "scroll",
       }}
     >
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/85 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 sm:px-6 sm:py-2.5 lg:px-8">
-          <div className="flex min-w-0 items-center gap-2 sm:gap-3">
-            <Link href="/es" className="shrink-0 font-body text-sm text-secondary-foreground transition-colors hover:text-primary" aria-label="Volver al perfil">←</Link>
-            <CompanyLogo priority />
-            <span className="font-body text-sm font-semibold text-secondary-foreground">PR15</span>
-          </div>
-          <ul className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 font-body text-sm font-medium text-secondary-foreground">
-            <li><Link href="/es" className="transition-colors hover:text-primary">Perfil</Link></li>
-            <li><Link href="/es/stats/2025-26" className="transition-colors hover:text-primary">2025/26</Link></li>
-            <li><Link href="/es/stats/2024-25" className="text-primary">2024/25</Link></li>
-          </ul>
-        </nav>
-      </header>
+      <SiteHeader
+        backHref="/es"
+        backAriaLabel="Volver al perfil"
+        menuLabel="Menú"
+        items={[
+          { type: "link", href: "/es", label: "Perfil" },
+          { type: "link", href: "/es/stats/2025-26", label: "2025/26" },
+          { type: "link", href: "/es/stats/2024-25", label: "2024/25", active: true },
+        ]}
+      />
 
       <section className="mx-auto max-w-7xl px-4 pt-28 pb-16 sm:px-6 sm:pt-32 lg:px-8">
         <div className="flex flex-wrap items-start justify-between gap-6">
