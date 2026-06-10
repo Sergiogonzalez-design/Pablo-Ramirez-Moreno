@@ -33,6 +33,12 @@ const seasons = [
   { club: "Getafe B + Sub 19", league: "Cantera",             season: "2021/22", gp: 39, gs: 35, goals: 1, minutes: 2933 },
 ];
 
+const highlightClips = [
+  { title: "Gol", src: "/rami-goal-1.mp4" },
+  { title: "Gol", src: "/rami-goal-2.mp4" },
+  { title: "Entrada en contraataque", src: "/rami-counter-tackle.mp4" },
+];
+
 const timeline = [
   { year: "2025–Presente", club: "Fuenlabrada",    detail: "Segunda Federación — 4ª división española. Titular habitual." },
   { year: "2023–2025",     club: "Leganés B",      detail: "Dos temporadas en Tercera Federación, peleando por el ascenso y marcando un gol en el partido de playoff." },
@@ -146,7 +152,7 @@ export default function EsPage() {
       <section id="highlights" className="scroll-mt-24 bg-zinc-900/40 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">Highlights</h2>
-          <div className="mt-10">
+          <div className="mt-10 space-y-10">
             <div className="aspect-video overflow-hidden rounded-xl border border-white/10 bg-black/25 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
               <iframe
                 className="h-full w-full"
@@ -156,6 +162,19 @@ export default function EsPage() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {highlightClips.map((clip) => (
+                <div key={clip.src}>
+                  <p className="font-body mb-3 text-xs font-semibold uppercase tracking-widest text-primary">{clip.title}</p>
+                  <div className="overflow-hidden rounded-xl border border-white/10 bg-black/25 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+                    <video className="w-full" controls preload="metadata" playsInline>
+                      <source src={clip.src} type="video/mp4" />
+                      Tu navegador no soporta la reproducción de vídeo.
+                    </video>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
