@@ -1,17 +1,23 @@
-import { CircleFlag } from "react-circle-flags";
+import ES from "country-flag-icons/react/3x2/ES";
+import US from "country-flag-icons/react/3x2/US";
 
 type FlagIconProps = {
   country: "us" | "es";
   className?: string;
 };
 
-export default function FlagIcon({ country, className = "h-12 w-12" }: FlagIconProps) {
+const flags = {
+  us: US,
+  es: ES,
+};
+
+export default function FlagIcon({ country, className = "h-10 w-[3.75rem]" }: FlagIconProps) {
+  const Flag = flags[country];
+
   return (
-    <CircleFlag
-      countryCode={country}
-      className={className}
-      height={48}
-      width={48}
+    <Flag
+      aria-hidden="true"
+      className={`overflow-hidden rounded-sm shadow-sm ${className}`}
     />
   );
 }
