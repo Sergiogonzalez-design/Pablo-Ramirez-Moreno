@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CompanyLogo from "@/components/CompanyLogo";
+import FlagIcon from "@/components/FlagIcon";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ export default function LanguageSelector() {
             href="/en"
             className="group flex min-w-[180px] flex-col items-center gap-2 rounded-2xl border border-white/15 bg-black/30 px-10 py-7 backdrop-blur-sm transition-all hover:border-primary/50 hover:bg-black/50"
           >
-            <span className="text-3xl">🇺🇸</span>
+            <FlagIcon country="us" />
             <span className="font-heading text-xl font-bold text-foreground group-hover:text-primary transition-colors">
               English
             </span>
@@ -54,7 +55,7 @@ export default function LanguageSelector() {
             href="/es"
             className="group flex min-w-[180px] flex-col items-center gap-2 rounded-2xl border border-white/15 bg-black/30 px-10 py-7 backdrop-blur-sm transition-all hover:border-primary/50 hover:bg-black/50"
           >
-            <span className="text-3xl">🇪🇸</span>
+            <FlagIcon country="es" />
             <span className="font-heading text-xl font-bold text-foreground group-hover:text-primary transition-colors">
               Español
             </span>
