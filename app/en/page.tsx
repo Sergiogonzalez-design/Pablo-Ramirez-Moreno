@@ -60,6 +60,7 @@ export default function EnPage() {
             />
             <li><a href="#seasons" className="transition-colors hover:text-primary">Seasons</a></li>
             <li><a href="#highlights" className="transition-colors hover:text-primary">Highlights</a></li>
+            <li><a href="#full-game" className="transition-colors hover:text-primary">Full Game</a></li>
             <li><a href="#report" className="transition-colors hover:text-primary">Report</a></li>
             <li><a href="#career" className="transition-colors hover:text-primary">Career</a></li>
             <li><a href="#contact" className="transition-colors hover:text-primary">Contact</a></li>
@@ -151,6 +152,27 @@ export default function EnPage() {
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/2fs-Gborb0o"
                 title="Pablo Ramirez — Highlights"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="full-game" className="scroll-mt-24 border-t border-white/10 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">Full Game</h2>
+          <p className="font-body mt-2 text-secondary-foreground">
+            Matchday 19 vs Coria — Segunda Federación (2ª RFEF).
+          </p>
+          <div className="mt-10">
+            <div className="aspect-video overflow-hidden rounded-xl border border-white/10 bg-black/25 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/xi2N_XEJZxs"
+                title="Pablo Ramirez Moreno — Full game vs Coria (Matchday 19, 2ª RFEF)"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
