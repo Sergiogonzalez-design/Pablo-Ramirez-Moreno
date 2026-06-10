@@ -42,7 +42,7 @@ export default function RamiEsStats2526Page() {
       className="min-h-screen bg-background"
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.80) 100%), url('/rami alcala.jpg')",
+          "linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.75) 100%), url('/rami alcala.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center 20%",
         backgroundAttachment: "fixed",
@@ -71,7 +71,7 @@ export default function RamiEsStats2526Page() {
           </div>
           <div className="flex gap-3 pt-2">
             {[{ label: "Partidos", value: "26" }, { label: "Titularidades", value: "20" }, { label: "Goles", value: "1" }].map((s) => (
-              <div key={s.label} className="rounded-xl border border-white/10 bg-black/30 px-5 py-4 text-center backdrop-blur-sm">
+              <div key={s.label} className="rounded-xl border border-white/10 bg-black/40 px-5 py-4 text-center backdrop-blur-md">
                 <p className="font-body text-xs uppercase tracking-widest text-primary">{s.label}</p>
                 <p className="font-heading mt-1 text-2xl font-bold text-foreground">{s.value}</p>
               </div>
@@ -81,7 +81,7 @@ export default function RamiEsStats2526Page() {
         <div className="mt-12 overflow-hidden rounded-xl border border-white/10">
           <table className="w-full font-body text-sm">
             <thead>
-              <tr className="border-b border-white/10 bg-black/30">
+              <tr className="border-b border-white/10 bg-black/35">
                 <th className="px-4 py-3 text-left text-xs uppercase tracking-widest text-primary">Fecha</th>
                 <th className="px-4 py-3 text-left text-xs uppercase tracking-widest text-primary">Partido</th>
                 <th className="px-4 py-3 text-center text-xs uppercase tracking-widest text-primary">Resultado</th>
@@ -90,7 +90,7 @@ export default function RamiEsStats2526Page() {
             </thead>
             <tbody>
               {matches.map((m, i) => (
-                <tr key={i} className="border-b border-white/5 bg-black/10 transition-colors hover:bg-black/25">
+                <tr key={i} className="border-b border-white/5 bg-black/15 transition-colors hover:bg-black/30">
                   <td className="px-4 py-3 text-secondary-foreground whitespace-nowrap">{m.date}</td>
                   <td className="px-4 py-3 font-medium text-foreground whitespace-nowrap">{m.home} <span className="text-secondary-foreground">vs</span> {m.away}</td>
                   <td className="px-4 py-3 text-center font-semibold text-foreground">{m.score}</td>

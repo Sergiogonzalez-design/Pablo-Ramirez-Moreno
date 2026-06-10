@@ -76,7 +76,7 @@ export default function EsPage() {
 
       <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
         <div className="absolute inset-0 bg-cover" style={{ backgroundImage: "url('/Rami jugando.jpg')", backgroundPosition: "center 20%" }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="font-body mb-4 text-xs uppercase tracking-[0.35em] text-primary">Defensa Central · España</p>
           <h1 className="font-heading text-5xl font-bold leading-none text-foreground sm:text-7xl md:text-8xl">
@@ -94,7 +94,7 @@ export default function EsPage() {
           </div>
           <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {stats.map((s) => (
-              <div key={s.label} className="rounded-xl border border-white/10 bg-black/25 p-5">
+              <div key={s.label} className="rounded-xl border border-white/10 bg-black/40 p-5 backdrop-blur-md">
                 <p className="font-body text-xs uppercase tracking-widest text-primary">{s.label}</p>
                 <p className="mt-2 font-heading text-xl font-bold text-foreground">{s.value}</p>
               </div>
@@ -103,7 +103,7 @@ export default function EsPage() {
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-black/40 py-8">
+      <section className="border-y border-white/10 bg-black/35 py-8 backdrop-blur-sm">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-6 px-4 sm:grid-cols-3 sm:px-6 lg:grid-cols-5 lg:px-8">
           {details.map((d) => (
             <div key={d.label}>
@@ -121,7 +121,7 @@ export default function EsPage() {
           <div className="mt-10 overflow-hidden rounded-xl border border-white/10">
             <table className="w-full font-body text-sm">
               <thead>
-                <tr className="border-b border-white/10 bg-black/30">
+                <tr className="border-b border-white/10 bg-black/35">
                   <th className="px-4 py-3 text-left text-xs uppercase tracking-widest text-primary">Temporada</th>
                   <th className="px-4 py-3 text-left text-xs uppercase tracking-widest text-primary">Club</th>
                   <th className="hidden px-4 py-3 text-left text-xs uppercase tracking-widest text-primary sm:table-cell">Liga</th>
@@ -133,7 +133,7 @@ export default function EsPage() {
               </thead>
               <tbody>
                 {seasons.map((s, i) => (
-                  <tr key={i} className="border-b border-white/5 bg-black/10 transition-colors hover:bg-black/25">
+                  <tr key={i} className="border-b border-white/5 bg-black/15 transition-colors hover:bg-black/30">
                     <td className="px-4 py-3 text-secondary-foreground">{s.season}</td>
                     <td className="px-4 py-3 font-medium text-foreground">{s.club}</td>
                     <td className="hidden px-4 py-3 text-secondary-foreground sm:table-cell">{s.league}</td>
