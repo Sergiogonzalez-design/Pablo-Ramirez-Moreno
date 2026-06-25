@@ -81,7 +81,7 @@ export default function EsPage() {
           <p className="font-body mt-6 max-w-2xl text-lg leading-relaxed text-secondary-foreground md:text-xl">
             Pablo &ldquo;Rami&rdquo; Ramirez Moreno es un defensa central español formado en la cantera del Getafe CF — uno de los programas de desarrollo más reconocidos de La Liga. Tras ser convocado al primer equipo del Getafe y completar dos productivas temporadas en el Leganés B, actualmente compite con el Fuenlabrada en la Segunda Federación.
           </p>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-nowrap gap-3 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>a]:shrink-0">
             <a href="https://es.besoccer.com/jugador/p-ramirez-1005319" target="_blank" rel="noopener noreferrer" className="font-body inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90">Perfil BeSoccer</a>
             <a href="https://www.transfermarkt.es/pablo-ramirez/profil/spieler/979355" target="_blank" rel="noopener noreferrer" className="font-body inline-flex items-center rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-foreground/10">Transfermarkt</a>
             <a href="https://www.instagram.com/ramijr5/" target="_blank" rel="noopener noreferrer" className="font-body inline-flex items-center rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-foreground/10">Instagram</a>
